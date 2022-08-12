@@ -63,7 +63,7 @@ const TopPanel = () => {
     },
   ];
 
-  return (<Row gutter={[16, 16]}>
+  return <Row gutter={[16, 16]}>
     {PANE_LIST.map((item, index) => (
       <Col key={item.title} xs={6} xl={3}>
         <Board
@@ -86,6 +86,6 @@ const TopPanel = () => {
       </Col>
     ))}
   </Row>
-);}
+};
 
 export default React.memo(TopPanel);

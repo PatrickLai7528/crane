@@ -5,12 +5,13 @@ import SeriesLineChart, {ISeriesLineChart, LineStyle} from '../../../../componen
 import { useTranslation } from 'react-i18next';
 
 
+
 const CpuChart = () => {
   const {t} = useTranslation();
   
   const item: ISeriesLineChart = {
-    title: t('CPU 资源使用'),
-    subTitle: t('(Core)'),
+    title: 'CPU 资源使用',
+    subTitle: '(Core)',
     datePicker: true,
     step: '1h',
     xAxis: {type: 'time'},
@@ -33,7 +34,6 @@ const CpuChart = () => {
       },
     ],
   };
-
   return (
     <Row gutter={[16, 16]} className={Style.cpuChartPanel}>
       <Col span={12}>
